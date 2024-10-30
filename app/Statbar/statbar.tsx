@@ -3,7 +3,6 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 interface StatBarProps {
-  statName: string;
   statValue: number;
   barColor: string;
 }
@@ -26,16 +25,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const StatBar: React.FC<StatBarProps> = ({ statName, statValue, barColor }) => {
+
+const StatBar: React.FC<StatBarProps> = ({ statValue, barColor }) => {
   const fillWidth = `${statValue}%`;
 
   return (
     <View>
       <View style={styles.container}>
-        <View style={[styles.fill, { width: fillWidth, backgroundColor: barColor }]} />
+        <View style={[styles.fill, { width: fillWidth, backgroundColor: barColor } as any]} />
       </View>
     </View>
-  );
-};
+  );}
 
 export default StatBar;
