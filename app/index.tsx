@@ -4,6 +4,7 @@ import { Image } from "react-native";
 import "./styles/josh.png" 
 import CharacterDisplay from "./Stats/stats";
 import { CharacterProps } from "./Stats/stats";
+import TasksContainer from './Tasks/tasks';
 
 const defaultCharacter: CharacterProps = {
   name: "Josh",
@@ -21,7 +22,7 @@ export default function Home() {
     <View>
       <div className="tasks">
         <h1>Tasks</h1>
-
+        <TasksContainer />
       </div>
       <div className="characterContainer">
         <h2>{defaultCharacter.name}</h2>
