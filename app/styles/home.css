@@ -1,9 +1,9 @@
 .characterContainer {
-    display: flex;
+    display: table-row;
     justify-content: space-around;
     align-items: center;
     background-color: rgba(255, 0, 0, 0.308);
-    height: 33vh;
+    height: 40vh;
     margin: 5%;
     border-radius: 1rem;
 
@@ -14,4 +14,19 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0 auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.stuffContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
 }
