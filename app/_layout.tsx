@@ -23,7 +23,7 @@
                  iconName = focused ? 'book' : 'book-outline'; 
                } else if (route.name === 'Calandar') {
                  iconName = focused ? 'calendar' : 'calendar-outline';
-               } else if (route.name === 'Home') { // Or 'home' if renamed
+               } else if (route.name === 'Home') { 
                  iconName = focused ? 'home' : 'home-outline';
                } else if (route.name === 'Character') {
                  iconName = focused ? 'person' : 'person-outline';
