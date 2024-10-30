@@ -1,0 +1,17 @@
+.characterContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.308);
+    height: 33vh;
+    margin: 5%;
+    border-radius: 1rem;
+
+    
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
