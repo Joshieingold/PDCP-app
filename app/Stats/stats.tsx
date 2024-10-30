@@ -1,3 +1,6 @@
+import StatBar from "../Statbar/statbar";
+
+
 export interface CharacterProps {
     name: string;
     strength: number;
@@ -16,27 +19,27 @@ const CharacterDisplay: React.FC<CharacterProps> = ({ name, strength, dexterity,
       <div className="stats">
         <div className="stat">
           <span className="stat-name">Strength:</span>
-          <span className="stat-value">{strength}</span>
+          <StatBar statName="Strength" statValue={strength} barColor="red" />
         </div>
         <div className="stat">
           <span className="stat-name">Dexterity:</span>
-          <span className="stat-value">{dexterity}</span>
+          <StatBar statName="Strength" statValue={dexterity} barColor="#FFFF00" />
         </div>
         <div className="stat">
           <span className="stat-name">Constitution:</span>
-          <span className="stat-value">{constitution}</span>
+          <StatBar statName="Constitution" statValue={constitution} barColor="brown" />
         </div>
         <div className="stat">
           <span className="stat-name">Intelligence:</span>
-          <span className="stat-value">{intelligence}</span>
+          <StatBar statName="Intelligence" statValue={intelligence} barColor="blue" />
         </div>
         <div className="stat">
           <span className="stat-name">Wisdom:</span>
-          <span className="stat-value">{wisdom}</span>
+          <StatBar statName="Wisdom" statValue={wisdom} barColor="purple" />
         </div>
         <div className="stat">
           <span className="stat-name">Charisma:</span>
-          <span className="stat-value">{charisma}</span>
+          <StatBar statName="Charisma" statValue={charisma} barColor="pink" />
         </div>
     </div>
   );
